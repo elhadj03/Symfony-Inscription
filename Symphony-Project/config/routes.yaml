@@ -1,0 +1,29 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+app_lucky_number:
+  path: /lucky/number
+  controller: App\Controller\LuckyController::number
+
+app_membres:
+  path: /membres
+  controller: App\Controller\MembresController::listeMembres
+
+app_membre_id:
+  path: /membre/{id}
+  controller: App\Controller\InfosMembreController::infosMembreParId
+
+
+app_membre_mail:
+  path: /membre/mail/{mail}
+  controller: App\Controller\InfosMembreController::infosMembresParMail
+
+
+app_membre:
+  path: /membre
+  controller: App\Controller\NouveauMembreController::nouveauMembre
+
+
+app_membre_bis:
+  path: /membrebis
+  controller: App\Controller\NouveauMembreEtAffichageMembresController::nouveauMembreEtAffichageMembres
